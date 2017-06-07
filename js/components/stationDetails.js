@@ -1,7 +1,7 @@
 'use strict';
 const StationDetails = (update)=>{
-	const detalles = $("<div></div>");
-	const name = $("<p>"+state.selectedStation.name+"</p>");
+	const detalles = $("<div id='detalles'></div>");
+	const name = $("<p class='titulo'>"+state.selectedStation.name+"</p>");
 	const address = $("<p>"+state.selectedStation.address+"</p>");
 	const containerProduct = $("<div class='container-product'></div>");
 

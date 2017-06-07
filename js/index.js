@@ -28,6 +28,7 @@ $( _ => {
     if (err) { return alert(err.message);}
       
     state.stations = json;
+
     const root = $('.root');
     render(root);
   });

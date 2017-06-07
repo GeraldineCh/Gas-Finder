@@ -1,10 +1,10 @@
 'use strict';
 const Gasolinera = (data,update)=>{
     const contenedor = $("<div class='general'></div>");
-    const dato = $("<span>"+data.name+"</span>");
+    const dato = $("<span class='titulo'>"+data.name+"</span>");
     const info = $("<p>"+data.address+"</p>");
     const distrito = $("<p>"+data.district+"</p>");
-    const ubicacion = $("<button>Ver mapa</button>");
+    const ubicacion = $("<a class='go-maps'><i class='fa fa-map'></i></a>");
 
     contenedor.append(dato);
     contenedor.append(info);
@@ -35,6 +35,11 @@ const Search = (update)=>{
     const iconLoop = $("<i class='fa fa-search'></i>");
     const input = $("<input type='text' placeholder='Ingrese distrito:'>");
     const estaciones = $("<div></div>");
+    
+    state.stations.forEach(station=>{
+        estaciones.append(Gasolinera(station,update));
+
+    });
     
     contenedor2.append(iconLoop);
     contenedor2.append(input);
