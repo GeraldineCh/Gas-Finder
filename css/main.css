@@ -21,12 +21,24 @@ header .fa-chevron-left {
 }
 
 /*Contenedores iniciales*/
-#buscador {
+
+.input-search {
+    height: 50px;
+    width: 100%;
+    background-color: #F44336;
     padding: 1em;
 }
 
+.input-search2 {
+    height: 25px;
+    background-color: white;
+    padding-left: 1em;
+}
+
 input {
+    margin-left: 5px;
     width: 90%;
+    border-style: none;
 }
 
 .general {

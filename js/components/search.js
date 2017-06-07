@@ -32,6 +32,8 @@ const reRender = (estaciones,finded,update)=>{
 
 const Search = (update)=>{
     const contenedor2 = $("<div id='buscador'></div>");
+    const search  = $("<div class='input-search'></div>");
+    const search2 = $("<div class='input-search2'></div>");
     const iconLoop = $("<i class='fa fa-search'></i>");
     const input = $("<input type='text' placeholder='Ingrese distrito:'>");
     const estaciones = $("<div></div>");
@@ -41,8 +43,10 @@ const Search = (update)=>{
 
     });
     
-    contenedor2.append(iconLoop);
-    contenedor2.append(input);
+    search2.append(iconLoop);
+    search2.append(input);
+    search.append(search2);
+    contenedor2.append(search);
     contenedor2.append(estaciones);
 
     input.on("keyup", () =>{		
