@@ -1,5 +1,5 @@
 'use strict';
-
+/*Se inicia con un llamado al padre*/
 const init = (parent) => {
   let map = new GMaps({
     el: parent,
