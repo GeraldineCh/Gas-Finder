@@ -1,6 +1,7 @@
 'use strict';
-const init = (parent) =>{
-  const map = new GMaps({
+
+const init = (parent) => {
+  let map = new GMaps({
     el: parent,
     lat: state.selectedStation.lat,
     lng: state.selectedStation.long
@@ -11,12 +12,11 @@ const init = (parent) =>{
     lng: state.selectedStation.long,
     title: state.selectedStation.name,
     zoom: 13
-  });
+  })
 }
 
-const Gmap = (update)=>{
-  const containerMap = $("<div id='map'></div>");
-  containerMap.init = init.bind(null,containerMap.get(0));
-
-  return containerMap;
-};
+const GMap = () => {
+  const wrapper = $('<div id="map"></div>');
+  wrapper.init = init.bind(null,wrapper.get(0));
+  return wrapper;
+}
