@@ -62,8 +62,9 @@ input {
 /*Gasolinas disponibles*/
 .product {
     margin-top: 1em;
+    margin-right: 1em;
     display: inline-flex;
     padding: 1em;
-    border: 1px solid gray;
+    background-color: gainsboro;
     border-radius: 25%;
 }
