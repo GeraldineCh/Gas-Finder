@@ -11,7 +11,7 @@ const init = (parent) => {
     lat: state.selectedStation.lat,
     lng: state.selectedStation.long,
     title: state.selectedStation.name,
-    zoom: 13
+    zoom: 8
   })
 }
 

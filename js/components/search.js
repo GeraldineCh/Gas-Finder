@@ -31,11 +31,12 @@ const reRender = (estaciones,finded,update)=>{
 };
 
 const Search = (update)=>{
-    const contenedor2 = $("<div></div>");
+    const contenedor2 = $("<div id='buscador'></div>");
     const iconLoop = $("<i class='fa fa-search'></i>");
     const input = $("<input type='text' placeholder='Ingrese distrito:'>");
     const estaciones = $("<div></div>");
     
+    contenedor2.append(iconLoop);
     contenedor2.append(input);
     contenedor2.append(estaciones);
 
