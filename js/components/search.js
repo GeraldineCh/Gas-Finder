@@ -3,9 +3,11 @@ const Gasolinera = (data,update)=>{
     const contenedor = $("<div></div>");
     const dato = $("<span>"+data.name+"</span>");
     const info = $("<p>"+data.address+"</p>");
+    const distrito = $("<p>"+data.district+"</p>");
 
     contenedor.append(dato);
     contenedor.append(info);
+    contenedor.append(distrito);
 
     return contenedor;
 
@@ -30,7 +32,6 @@ const Search = (update)=>{
 
     input.on("keyup", () =>{		
         if(input.val() != ""){
-            console.log(filterByDistrict(state.stations,input.val()));
             var finded = filterByDistrict(state.stations,input.val());
         }
 

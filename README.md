@@ -1,4 +1,4 @@
-# gasfinder
+# Gas Finder
 
 ## Instrucciones
 
