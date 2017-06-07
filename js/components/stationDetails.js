@@ -2,7 +2,7 @@
 const StationDetails = (update)=>{
 	const detalles = $("<div id='detalles'></div>");
 	const name = $("<p class='titulo'>"+state.selectedStation.name+"</p>");
-	const address = $("<p>"+state.selectedStation.address+"</p>");
+	const address = $("<p class='direccion'>"+state.selectedStation.address+"</p>");
 	const containerProduct = $("<div class='container-product'></div>");
 
 	state.selectedStation.products.forEach((elem)=>{

@@ -54,3 +54,16 @@ input {
     height: 400px;
     align-content: center;
 }
+
+.direccion {
+    border-top: 1px solid gray;
+}
+
+/*Gasolinas disponibles*/
+.product {
+    margin-top: 1em;
+    display: inline-flex;
+    padding: 1em;
+    border: 1px solid gray;
+    border-radius: 25%;
+}
